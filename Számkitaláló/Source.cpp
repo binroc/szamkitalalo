@@ -1,18 +1,27 @@
 #include <iostream>
 #include <stdlib.h>
 #include <time.h>
+#include "Replay.h"
 
 using namespace std;
 
+int gepszama;
+int emberszama;
+int proba;
+
+void setup()
+{
+	gepszama = rand() % 100 + 1;
+	emberszama = 0;
+	proba = 0;
+	system("cls");
+}
+
 int main()
 {
-	setlocale(LC_ALL,"Hun");
-
+	setlocale(LC_ALL, "Hun");
 	srand(time(0));
-
-	int gepszama = rand() % 100 + 1;
-	int emberszama;
-	int proba = 0;
+	setup();
 
 	do
 	{
@@ -61,6 +70,7 @@ int main()
 				cout<<""<<endl;
 				cout<<"Gratulálok!"<<endl;
 				cout<<""<<endl;
+				replay();
 			}
 			else if(proba <= 5)
 			{
@@ -69,6 +79,7 @@ int main()
 				cout<<""<<endl;
 				cout<<"Gratulálok!"<<endl;
 				cout<<""<<endl;
+				replay();
 			}
 			else if(proba <= 7)
 			{
@@ -77,6 +88,7 @@ int main()
 				cout<<""<<endl;
 				cout<<"Gratulálok!"<<endl;
 				cout<<""<<endl;
+				replay();
 			}
 			else
 			{
@@ -85,9 +97,10 @@ int main()
 				cout<<""<<endl;
 				cout<<"Majd máskor sikerül.";
 				cout<<""<<endl;
+				replay();
 			}
-			system("pause");
 		}
 
 	}while(emberszama!=gepszama);
+	return 0;
 }

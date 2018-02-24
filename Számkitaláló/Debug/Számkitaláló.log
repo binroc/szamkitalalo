@@ -1,0 +1,3 @@
+﻿  Source.cpp
+c:\users\szabó dániel\documents\github\szamkitalalo\számkitaláló\source.cpp(23): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Számkitaláló.vcxproj -> C:\Users\Szabó Dániel\Documents\Github\szamkitalalo\Debug\Számkitaláló.exe
